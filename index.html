@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YP</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/logo-ft.png" type="image/x-icon">
 
@@ -33,7 +33,7 @@
   
       <div class="container-fluid bg_header py-2 ">
         <div class="row  bg-transparent ">
-            <div class="col-md-10 align-content-center ">
+            <div class="col-12 align-content-center ">
                 <div class="hstack row bg-transparent">
                     <div class="bg-light d-flex  col-md-6 py-2 bg-transparent  ">
                         <div class="location_icon pe-3  text-center align-content-center">
@@ -46,10 +46,10 @@
                             <p class="my-auto text-white">Roanoke, Portland</p>
                         </div>
                     </div>
-                    <div class="bg-light  d-flex col-md-6 py-2 bg-transparent">
+                    <div class="bg-light  justify-content-end  d-flex col-md-6 py-2 bg-transparent">
                         <div class="location_icon pe-3  text-center align-content-center">
                             <div class="rounded-circle circle  p-2 px-3">
-                                <i class="fa-solid fa-location-dot "></i>
+                              <i class="fa-regular fa-envelope"></i>
                             </div>
                         </div>
                         <div class="locatoion_textd-flex flex-column justify-content-center">
@@ -57,11 +57,6 @@
                             <p class="my-auto text-white">Basilicorestau rant @gmail. com</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-2  align-content-center  py-2">
-                <div class="location d-flex col-md-12 navbar-collapse collapse ">
-                    <button type="button" class="btn w-75  book_btn  btn-outline-secondary  py-3">BOOK A TABLE</button>
                 </div>
             </div>
         </div>
@@ -79,7 +74,7 @@
                       
                     </div>
                     <div class="collapse navbar-collapse bg_color   col-md-10" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2  mb-lg-0  gap-2  justify-content-evenly ">
+                        <ul class="navbar-nav ms-auto   gap-2  ">
                           <li class="nav-item   px-0 pe-5 nav-hover ">
                             <a class="nav-link px-0 active text-uppercase text-white" aria-current="page" href="#">Home</a>
                           </li>
@@ -98,10 +93,10 @@
                           <li class="nav-item pe-5 nav-hover  px-0">
                             <a class="nav-link px-0 text-uppercase text-white" href="#">Contact</a>
                           </li>
+                          <li class="nav-item  nav-hover  px-0">
+                            <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass fw-bold  "></i></a>
+                          </li>
                         </ul>
-                    </div>
-                    <div class="col-md-1 border_l navbar-collapse collapse py-2 text-end align-content-center">
-                        <a href="#"><i class="fa-solid fa-magnifying-glass fw-bold fs-3 "></i></a>
                     </div>
                 </div>
             </div>
@@ -111,7 +106,9 @@
     <div class="offcanvas offcanvas-start " style="background-color: black;" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
       <div class="offcanvas-header">
         <img src="assets/img/logo.png" class="img-fluid" width="40px" alt="">
-        <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="border-0 bg-transparent text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid  fs-3 l_text  fa-xmark"></i>
+        </button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav mx-auto mb-2   mb-lg-0  gap-2  justify-content-evenly ">
@@ -186,7 +183,7 @@
                 <div class="swiper-pagination"></div>
             <script>
                 var swiper = new Swiper(".mySwiper", {
-                  spaceBetween: 1,
+                  spaceBetween: 0,
                   centeredSlides: true,
                   autoplay: {
                     delay: 2500,
